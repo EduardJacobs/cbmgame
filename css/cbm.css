@@ -1,0 +1,48 @@
+
+table { table-layout: fixed; width: 400px; margin-left:auto; margin-right: auto; margin-top:50px;  }
+table td { width: 100px; height: 100px; }
+
+.frown_0, .frown_1, .frown_2, .frown_3, .frown_4, .frown_5, .frown_6, 
+.frown_7, .frown_8, .frown_9, .frown_10, .frown_11, .frown_12, .frown_13, 
+.frown_14, .frown_15, .frown_16, .smile_0, .smile_1, .smile_2, .smile_3, .smile_4, .smile_5, .smile_6, 
+.smile_7, .smile_8, .smile_9, .smile_10, .smile_11, .smile_12, .smile_13, 
+.smile_14, .smile_15, .smile_16
+{ 
+    cursor:crosshair; 
+    background-position: center;
+    background-size: 100px 100px;
+}
+
+.frown_0 { background-image: url("../img/00_frown.jpg"); }
+.frown_1 { background-image: url("../img/01_frown.jpg"); }
+.frown_2 { background-image: url("../img/02_frown.jpg"); }
+.frown_3 { background-image: url("../img/03_frown.jpg"); }
+.frown_4 { background-image: url("../img/04_frown.jpg"); }
+.frown_5 { background-image: url("../img/05_frown.jpg"); }
+.frown_6 { background-image: url("../img/06_frown.jpg"); }
+.frown_7 { background-image: url("../img/07_frown.jpg"); }
+.frown_8 { background-image: url("../img/08_frown.jpg"); }
+.frown_9 { background-image: url("../img/09_frown.jpg"); }
+.frown_10 { background-image: url("../img/10_frown.jpg"); }
+.frown_11 { background-image: url("../img/11_frown.jpg"); }
+.frown_12 { background-image: url("../img/12_frown.jpg"); }
+.frown_13 { background-image: url("../img/13_frown.jpg"); }
+.frown_14 { background-image: url("../img/14_frown.jpg"); }
+.frown_15 { background-image: url("../img/15_frown.jpg"); }
+
+.smile_15 { background-image: url("../img/15_smile.jpg"); }
+.smile_14 { background-image: url("../img/14_smile.jpg"); }
+.smile_13 { background-image: url("../img/13_smile.jpg"); }
+.smile_12 { background-image: url("../img/12_smile.jpg"); }
+.smile_11 { background-image: url("../img/11_smile.jpg"); }
+.smile_10 { background-image: url("../img/10_smile.jpg"); }
+.smile_9 { background-image: url("../img/09_smile.jpg"); }
+.smile_8 { background-image: url("../img/08_smile.jpg"); }
+.smile_7 { background-image: url("../img/07_smile.jpg"); }
+.smile_6 { background-image: url("../img/06_smile.jpg"); }
+.smile_5 { background-image: url("../img/05_smile.jpg"); }
+.smile_4 { background-image: url("../img/04_smile.jpg"); }
+.smile_3 { background-image: url("../img/03_smile.jpg"); }
+.smile_2 { background-image: url("../img/02_smile.jpg"); }
+.smile_1 { background-image: url("../img/01_smile.jpg"); }
+.smile_0 { background-image: url("../img/00_smile.jpg"); }
