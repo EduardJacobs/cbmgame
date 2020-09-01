@@ -1,30 +1,35 @@
-let shuffledArray, random_td, random;
+function cbmGame(){
 
-// Get all td elements in collection and then convert it to an array
-let arrayTd = [].slice.call(document.getElementsByTagName("td"));
+  let arrayTd, random, randomTd;
 
-// Shuffle the newly created array of td elements
-shuffledArray = arrayTd.sort(() => Math.random() - 0.5);
+  // Get a collection of td elements and then convert it to an array
+  arrayTd = [].slice.call(document.getElementsByTagName("td"));
 
-// Picking a random number out of 16 numbers
-// in order to pick a random td element
-random = Math.floor(Math.random() * (16));
-randomTd = shuffledArray[random];
+  // Reset classes in all td elements
+  for(let i=0; i< arrayTd.length; i++){
+    arrayTd[i].className = '';
+  }
 
-// Iterating the array to assign all elements
-// a frowning face image via css, added as a background image
-for(let i=0; i< shuffledArray.length; i++){
-  shuffledArray[i].classList.add("frown_" + i);
+  // Shuffle the newly created array of td elements
+  arrayTd = arrayTd.sort(() => Math.random() - 0.5);
+
+  // Picking a random number out of 16 numbers
+  // in order to pick a random td element
+  random = Math.floor(Math.random() * (16));
+  randomTd = arrayTd[random];
+
+  // Iterating the array to assign all elements
+  // a frowning face image via css, added as a background image
+  for(let i=0; i< arrayTd.length; i++){
+    arrayTd[i].classList.add("frown_" + i);
+  }
+
+  // Removing all classes from the random td element
+  // and addding a smiling face image class to it
+  randomTd.className = ""; 
+  randomTd.classList.add("smile_" + random);
+  randomTd.addEventListener("click", cbmGame);
 }
 
-// Removing all classes from the random td element
-// and addding a smiling face image class to it
-randomTd.classList.remove(); 
-randomTd.classList.add("smile_" + random);
-
-// The page needs to be reloaded to have a new DOM
-// since have manilulated it
-randomTd.addEventListener("click", ()=>{
-    location.reload();
-});
-
+// Calling the function when the page first loads
+cbmGame();
